@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GAME DEALS PASS</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background-color: #0d0d0d;
+      color: #ffffff;
+      padding: 20px 16px;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    /* ヘッダー */
+    .brand-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+    .brand-icon {
+      width: 34px;
+      height: 34px;
+      background: #107c41;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 900;
+      color: #000;
+      font-size: 20px;
+    }
+    .brand-title {
+      font-size: 20px;
+      font-weight: 900;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: #fff;
+    }
+
+    /* セクションラベル */
+    .section-label {
+      font-size: 12px;
+      font-weight: 800;
+      color: #107c41;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      margin-bottom: 14px;
+    }
+
+    /* ストアカード一覧 */
+    .store-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .store-card {
+      background: #181818;
+      border: 1px solid #282828;
+      border-radius: 12px;
+      padding: 18px 16px;
+      text-decoration: none;
+      color: inherit;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: transform 0.15s, border-color 0.2s;
+    }
+
+    .store-card:active {
+      transform: scale(0.98);
+      border-color: #107c41;
+    }
+
+    .store-info {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .store-name {
+      font-size: 16px;
+      font-weight: 800;
+      color: #fff;
+    }
+
+    .store-desc {
+      font-size: 12px;
+      color: #888;
+    }
+
+    .btn-go {
+      background: #107c41;
+      color: #fff;
+      font-size: 12px;
+      font-weight: 800;
+      padding: 8px 14px;
+      border-radius: 20px;
+      white-space: nowrap;
+    }
+
+    .free-btn {
+      background: #e53935;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="brand-header">
+    <div class="brand-icon">✕</div>
+    <div class="brand-title">GAME DEALS PASS</div>
+  </div>
+
+  <div class="section-label">SELECT PLATFORM</div>
+
+  <div class="store-list">
+
+    <a class="store-card" href="https://store-jp.nintendo.com/list/software/sale/" target="_blank">
+      <div class="store-info">
+        <div class="store-name">Nintendo Switch</div>
+        <div class="store-desc">任天堂公式 セール＆キャンペーン</div>
+      </div>
+      <div class="btn-go">公式ストアへ</div>
+    </a>
+
+    <a class="store-card" href="https://store.playstation.com/ja-jp/category/3587c261-5400-491a-96ad-1144a04d30c5/1" target="_blank">
+      <div class="store-info">
+        <div class="store-name">PlayStation</div>
+        <div class="store-desc">PS Store 最新割引・特別価格</div>
+      </div>
+      <div class="btn-go">公式ストアへ</div>
+    </a>
+
+    <a class="store-card" href="https://www.xbox.com/ja-JP/promotions/sales/sales-and-specials" target="_blank">
+      <div class="store-info">
+        <div class="store-name">Xbox</div>
+        <div class="store-desc">Xbox/PC Game Pass＆ストア特売</div>
+      </div>
+      <div class="btn-go">公式ストアへ</div>
+    </a>
+
+    <a class="store-card" href="https://store.steampowered.com/specials" target="_blank">
+      <div class="store-info">
+        <div class="store-name">Steam</div>
+        <div class="store-desc">Steam スペシャルセール一覧</div>
+      </div>
+      <div class="btn-go">公式ストアへ</div>
+    </a>
+
+    <a class="store-card" href="https://store.epicgames.com/ja/browse?sortBy=releaseDate&sortDir=DESC&priceTier=tierFree&count=40" target="_blank">
+      <div class="store-info">
+        <div class="store-name">Epic Games</div>
+        <div class="store-desc">Epic Games Store セール対象</div>
+      </div>
+      <div class="btn-go">公式ストアへ</div>
+    </a>
+
+    <a class="store-card" href="https://store.epicgames.com/ja/free-games" target="_blank">
+      <div class="store-info">
+        <div class="store-name">無料ゲーム (100% OFF)</div>
+        <div class="store-desc">Epic Games 期間限定・無料配布作品</div>
+      </div>
+      <div class="btn-go free-btn">無料枠を見る</div>
+    </a>
+
+  </div>
+
+</body>
+</html>
